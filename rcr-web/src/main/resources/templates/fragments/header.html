@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="eng"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="header">
+    <nav class="navbar-default navbar-fixed-top">
+        <div class="container">
+           <!-- <div class="navbar-header" id="startprinting">
+                <a class="navbar-brand" th:href="@{'/start/{flag}' (flag = 'true')}">Start printing documents</a>
+            </div>
+            <div class="navbar-header" id="stopprinting">
+                <a class="navbar-brand" th:href="@{'/stop/{flag}' (flag = 'false')}">Stop printing</a>
+            </div>-->
+            <button class="navbar-button" type="button" name="start" id="start">Start printing documents</button>
+
+            <button class="navbar-button" type="button" name="add" id="add">Push document</button>
+
+           <!-- <form action="#" data-th-action="@{/stop/{flag}" data-th-object="$(flag = 'false')" method="post">-->
+            <button class="navbar-button" type="button" name="stop" id="stop">Stop printing</button>
+
+        </div>
+    </nav>
+</div>
+</html>
